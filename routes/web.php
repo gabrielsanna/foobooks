@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/example', function () {
-    return view('abc');
-});
+Route::get('/book/', function () {
+	return "Show all the books!";
+}
+
+Route::get('/book/{title}', function ($title) {
+	return "You are viewing " . $title;
+}
