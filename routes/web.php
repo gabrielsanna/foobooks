@@ -11,10 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+# WelcomeController routes
+Route::get('/', 'WelcomeController');
 
+# BookController routes
 Route::get('/book/', 'BookController@index');
-
 Route::get('/book/{title}', 'BookController@show');
