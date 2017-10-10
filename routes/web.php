@@ -17,8 +17,8 @@ Route::get('/', function () {
 
 Route::get('/book/', function () {
 	return "Show all the books!";
-}
+});
 
 Route::get('/book/{title}', function ($title) {
 	return "You are viewing " . $title;
-}
+});
